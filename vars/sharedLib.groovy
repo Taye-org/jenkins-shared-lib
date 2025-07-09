@@ -1,3 +1,6 @@
+def call() { 
+    return this  
+}
 def buildDocker(imageName) {
     echo "Building Docker image: ${imageName}"
     sh "docker build -t ${imageName} ."
